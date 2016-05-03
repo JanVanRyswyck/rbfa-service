@@ -3,15 +3,16 @@
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
 
-  :dependencies [[org.clojure/clojure "1.8.0"]
+  :dependencies [[luminus-log4j "0.1.3"]
+                 [org.clojure/clojure "1.8.0"]
                  [selmer "1.0.4"]
-                 [markdown-clj "0.9.88"]
+                 [markdown-clj "0.9.89"]
                  [ring-middleware-format "0.7.0"]
                  [metosin/ring-http-response "0.6.5"]
                  [bouncer "1.0.0"]
                  [org.webjars/bootstrap "4.0.0-alpha.2"]
                  [org.webjars/font-awesome "4.6.1"]
-                 [org.webjars.bower/tether "1.1.1"]
+                 [org.webjars.bower/tether "1.3.1"]
                  [org.webjars/jquery "2.2.2"]
                  [org.clojure/tools.logging "0.3.1"]
                  [compojure "1.5.0"]
@@ -21,10 +22,9 @@
                  [cprop "0.1.7"]
                  [org.clojure/tools.cli "0.3.3"]
                  [luminus-nrepl "0.1.4"]
+                 [metosin/compojure-api "1.1.0"]
                  [org.webjars/webjars-locator-jboss-vfs "0.1.0"]
-                 [luminus-immutant "0.2.0"]
-                 [metosin/compojure-api "1.0.2"]
-                 [luminus-log4j "0.1.3"]]
+                 [luminus-immutant "0.2.0"]]
 
   :min-lein-version "2.0.0"
 

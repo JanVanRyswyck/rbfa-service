@@ -1,7 +1,5 @@
 (ns rbfa-service.handler
   (:require [compojure.core :refer [routes wrap-routes]]
-            [rbfa-service.layout :refer [error-page]]
-            [rbfa-service.routes.home :refer [home-routes]]
             [rbfa-service.routes.services :refer [service-routes]]
             [compojure.route :as route]
             [rbfa-service.env :refer [defaults]]
@@ -15,13 +13,8 @@
 (def app-routes
   (routes
     #'service-routes
-    (-> #'home-routes
-        (wrap-routes middleware/wrap-csrf)
-        (wrap-routes middleware/wrap-formats))
     (route/not-found
-      (:body
-        (error-page {:status 404
-                     :title "page not found"})))))
+      "page not found")))
 
 
 (defn app [] (middleware/wrap-base #'app-routes))

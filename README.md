@@ -1,6 +1,6 @@
 # rbfa-service
 
-generated using Luminus version "2.9.10.44"
+generated using Luminus version "2.9.10.46"
 
 FIXME
 
